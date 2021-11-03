@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 713}
   m_MaxSize: {x: 14002, y: 18063}
   vertical: 0
-  controlID: 109
+  controlID: 104
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -402,13 +402,13 @@ MonoBehaviour:
   - Assets/Ardity/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\WorkStation Pro\\Desktop\\UNIVERSIDAD\\QUINTO SEMESTRE
-    (2021-2)\\Sistemas f\xEDsicos\\Final Sistemas Fisicos"
+    (2021-2)\\Sistemas f\xEDsicos\\FinalSistemas\\Final Sistemas Fisicos"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e3f0000
-    m_LastClickedID: 16174
+    m_SelectedIDs: 423f0000
+    m_LastClickedID: 16194
     m_ExpandedIDs: 00000000263f00002a3f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 50fbffff
       m_LastClickedID: -1200
-      m_ExpandedIDs: 52fbffff
+      m_ExpandedIDs: 52fbffff1c3d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -671,11 +671,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.06444804, y: -0.014968148, z: 0.00096681004, w: 0.9978089}
     speed: 2
-    m_Value: {x: -0.06444804, y: 0.014968148, z: -0.0009668101, w: -0.99780893}
+    m_Value: {x: 0.064448014, y: -0.014968141, z: 0.0009668096, w: 0.9978084}
   m_Size:
-    m_Target: 19.539412
+    m_Target: 16.252678
     speed: 2
-    m_Value: 19.539412
+    m_Value: 16.252678
   m_Ortho:
     m_Target: 0
     speed: 2
