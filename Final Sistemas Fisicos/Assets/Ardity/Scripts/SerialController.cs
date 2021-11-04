@@ -33,6 +33,7 @@ using System.IO.Ports;
 public class SerialController : MonoBehaviour
 {
     [SerializeField] Dropdown myDrop, myDrop2;
+   
 
     [Tooltip("Port name with which the SerialPort object will be created.")]
     public string portName = "COM3";

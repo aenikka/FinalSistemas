@@ -17,6 +17,8 @@ using System.Threading;
  */
 public class SerialControllerCustomDelimiter : MonoBehaviour
 {
+  
+
     [Tooltip("Port name with which the SerialPort object will be created.")]
     public string portName = "COM3";
 

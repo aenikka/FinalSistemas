@@ -33,17 +33,17 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
 
         // If you press one of these keys send it to the serial device. A
         // sample serial device that accepts this input is given in the README.
-        if (Input.GetKeyDown(KeyCode.A))
+       /* if (Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log("Sending A");
-            serialController.SendSerialMessage("A");
+            Debug.Log("Sending r");
+            serialController.SendSerialMessage("r");
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            Debug.Log("Sending Z");
-            serialController.SendSerialMessage("Z");
-        }
+            Debug.Log("Sending w");
+            serialController.SendSerialMessage("w");
+        }*/
 
 
         //---------------------------------------------------------------------
@@ -62,5 +62,18 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
             Debug.Log("Connection attempt failed or disconnection detected");
         else
             Debug.Log("Message arrived: " + message);
+    }
+
+
+    public void SendR()
+    {
+        Debug.Log("Sending r");
+        serialController.SendSerialMessage("r");
+    }
+
+    public void SendW()
+    {
+        Debug.Log("Sending w");
+        serialController.SendSerialMessage("w");
     }
 }

@@ -30,6 +30,8 @@ public abstract class AbstractSerialThread
     private int delayBeforeReconnecting;
     private int maxUnreadMessages;
 
+    public Canvas canvas;
+
     // Object from the .Net framework used to communicate with serial devices.
     private SerialPort serialPort;
 
@@ -73,6 +75,9 @@ public abstract class AbstractSerialThread
         this.delayBeforeReconnecting = delayBeforeReconnecting;
         this.maxUnreadMessages = maxUnreadMessages;
         this.enqueueStatusMessages = enqueueStatusMessages;
+       
+
+
 
         inputQueue = Queue.Synchronized(new Queue());
         outputQueue = Queue.Synchronized(new Queue());
