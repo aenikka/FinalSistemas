@@ -18,52 +18,33 @@ void loop()
 
 }
 
-void Task1()
-{
-  static bool ledState = false;
-  if ( Serial.available() > 0) 
-  {
-    String dato = Serial.readStringUntil('\n');
-    if ( dato == "r") 
-    {
-       Serial.print(digitalRead(PULSE));
-       Serial.println(ledState);
-       //Serial.println('\n');
-    }
-    else if (dato == "w")
-    {
 
-       if (ledState == false) 
-       {
-        ledState = true;
-       } 
-       else 
-       {
-        ledState = false;
-       }
-     digitalWrite(ALIVELED, ledState);
-    }
-  }
-
-  
-}
 
 void Task12()
   {
-     if (millis() > last_time + 2000)
-    {
-        Serial.println("Arduino is alive!!");
-        last_time = millis();
-    }
-
+    static bool ledState = false;
+    
     // Send some message when I receive an 'A' or a 'Z'.
     switch (Serial.read())
     {
         case 'w':
-            Serial.println("w");
+        
+            //Serial.println("w");
+            if (ledState == false) 
+             {
+              ledState = true;
+             } 
+             else 
+             {
+              ledState = false;
+             }
+            digitalWrite(ALIVELED, ledState);
             break;
+            
         case 'r':
-            Serial.println("r");
+        
+            Serial.print(digitalRead(PULSE));
+            Serial.println(ledState);
             break;
     }
   }
